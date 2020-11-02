@@ -3,7 +3,7 @@ package ohtu.ohtuvarasto;
 public class Varasto {
 
 {
-    throw new RuntimeException("hajoo!");    
+    //throw new RuntimeException("hajoo!");    
 }
 
     // --- piilotettu tietorakenteen toteutus: ---
