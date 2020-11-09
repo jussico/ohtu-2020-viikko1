@@ -2,9 +2,9 @@ package ohtu.ohtuvarasto;
 
 public class Varasto {
 
-{
+//{
     //throw new RuntimeException("hajoo!");    
-}
+//}
 
     // --- piilotettu tietorakenteen toteutus: ---
     private double tilavuus;  // paljonko varastoon mahtuu,  > 0
@@ -28,14 +28,15 @@ public class Varasto {
         {
             this.tilavuus = 0.0;  // => käyttökelvoton varasto
         }
-        if (alkuSaldo < 0.0) {
-            this.saldo = 0.0;
-        } else if (alkuSaldo <= tilavuus) // mahtuu
-        {
-            this.saldo = alkuSaldo;
-        } else {
-            this.saldo = tilavuus;  // täyteen ja ylimäärä hukkaan!
-        }
+        // PUIS. CYCLOMATIX COMPLEXITY..
+        // if (alkuSaldo < 0.0) {
+        //     this.saldo = 0.0;
+        // } else if (alkuSaldo <= tilavuus) // mahtuu
+        // {
+        //     this.saldo = alkuSaldo;
+        // } else {
+        //     this.saldo = tilavuus;  // täyteen ja ylimäärä hukkaan!
+        // }
     }
 
     // --- ottavat aksessorit eli getterit: ---
